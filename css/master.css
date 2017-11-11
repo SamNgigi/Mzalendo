@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial|Raleway');
+button {
+  font-family: 'Raleway', sans-serif;
+}
 /*Navigation*/
 .navigation {
   opacity: 0.9;
   font-size: 20px;
-
+  font-family: 'Raleway', sans-serif;
 }
 /*Main*/
 .main{
@@ -15,9 +19,11 @@
 }
 .main h1{
   padding: 5px;
+  font-family: 'Questrial', sans-serif;
 }
 .main p{
   padding: 5px;
+  font-family: 'Raleway', sans-serif;
 }
 .main .row{
   padding: 50px;
@@ -29,6 +35,9 @@
   .main p{
     display: none;
   }
+}
+.modal {
+  font-family: 'Raleway', sans-serif;
 }
 /*how*/
 .how {
