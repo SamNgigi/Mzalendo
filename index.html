@@ -1,115 +1,117 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Mzalendo</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="css/master.css">
-  </head>
-  <body>
+<head>
+  <title>Mzalendo</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
   <!--Navigation-->
-    <section class="navigation">
-      <!--In previous bootstrap the navbar-expand was navbar-toggleable-->
-      <nav class="navbar navbar-expand-md bg-primary navbar-dark fixed-top">
-       <div class="container-fluid">
-         <a href="index.html" class="navbar-brand">Mzalendo</a>
-         <!--This is how we create the humburger menu icon-->
-         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" type="button" name="button">
+  <section class="navigation">
+    <!--In previous bootstrap the navbar-expand was navbar-toggleable-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:#000000">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">Mzalendo</a>
+        <!--This is how we create the humburger menu icon-->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" type="button" name="button">
            <span class="navbar-toggler-icon"></span>
          </button>
-         <!--This is the menu elements that will collapse into the humburger-->
-         <div class="collapse navbar-collapse" id="navbarCollapse">
-           <!--the ml(margin-left) auto  is going to move the ul to the right -->
-           <ul class="navbar-nav ml-auto">
-             <li class="nav-item">
-               <a href="#about-section" class="nav-link">About</a>
-             </li>
+        <!--This is the menu elements that will collapse into the humburger-->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <!--the ml(margin-left) auto  is going to move the ul to the right -->
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a href="#about-section" class="nav-link">Sign Up</a>
+              <a href="About.html" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="#contact" class="nav-link">Login</a>
+              <a href="Sign Up.html" class="nav-link">Sign Up</a>
             </li>
-           </ul>
-         </div>
-       </div>
-      </nav>
-    </section>
-  <!--Report Section-->
-    <section class="main">
-      <div class="container">
-        <h1>Welcome to Mzalendo</h1>
-        <h3><strong>Brother's Keeper</strong></h3>
-        <p>A community of people who want to actively participate in the safety and well-being of you and those close to you. Report incidents of crime or corruption.
-          Recommend individuals who provide excellent services and model intergity in their field of expertise.
-        </p>
+            <li class="nav-item">
+              <a href="Login.html" class="nav-link">Login</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </section>
-    <div class="container d-flex justify-content-center">
-      <div class="row">
-        <div class=" col-md-6">
-           <button  id="btnReport" class="btn btn-danger animated tada" data-toggle="modal" data-target="#report" data-whatever="@mzalendo_crimeReport" role="button" aria-pressed = "true">
+    </nav>
+  </section>
+  <!--Report Section-->
+  <section class="main">
+    <div class="container">
+      <h1>Welcome to Mzalendo</h1>
+      <blockquote class="blockquote">
+        <p class="mb-0">Haki iwe ngao na mlinzi</p>
+        <footer class="blockquote-footer"><cite title="Source Title">Kenyan National Anthem</cite></footer>
+      </blockquote>
+    </div>
+  </section>
+  <div class="container d-flex justify-content-center">
+    <div class="row">
+      <div class=" col-md-6">
+        <button id="btnReport" class="btn btn-danger animated tada" data-toggle="modal" data-target="#report" data-whatever="@mzalendo_crimeReport" role="button" aria-pressed="true">
             <h1>Report Crime</h1>
             <p><em>Your identification status is anonymous</em></p>
            </button>
-         </div>
-         <div class="col-md-6">
-            <button id="btnCommend" class="btn btn-success animated pulse" data-toggle="modal" data-target="#report" data-whatever="@mzalendo_commendReport" role="button" aria-pressed = "true">
+      </div>
+      <div class="col-md-6">
+        <button id="btnCommend" class="btn btn-success animated pulse" data-toggle="modal" data-target="#report" data-whatever="@mzalendo_commendReport" role="button" aria-pressed="true">
              <h1>Commend</h1>
              <p><em>Your identification status is anonymous</em></p>
             </button>
-          </div>
       </div>
     </div>
-    <!--Main Modal-->
-    <div class="modal fade" id="report" tabindex="-1" role="dialog" aria-labelledby="reportLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="reportLabel">New message</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  </div>
+  <!--Main Modal-->
+  <div class="modal fade" id="report" tabindex="-1" role="dialog" aria-labelledby="reportLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="reportLabel">New message</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                <input type="text" class="form-control" id="recipient-name">
-              </div>
-              <div class="form-group">
-                <label for="message-text" class="col-form-label">Time of incident:</label>
-                <textarea class="form-control" id="time-text"></textarea>
-              </div>
-              <div class="form-group">
-                <label for="message-text" class="col-form-label">Location of incident:</label>
-                <textarea class="form-control" id="location-text"></textarea>
-              </div>
-              <div class="form-group">
-                <label for="message-text" class="col-form-label">Message:</label>
-                <textarea class="form-control" id="message-text"></textarea>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button class="btn btn-outline-secondary" type="button" name="button" data-dismiss="modal">Close</button>
-            <button class="btn btn-outline-primary" type="button" name="button" data-dismiss="modal">Submit</button>
-          </div>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Recipient:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Time of incident:</label>
+              <textarea class="form-control" id="time-text"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Location of incident:</label>
+              <textarea class="form-control" id="location-text"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-secondary" type="button" name="button" data-dismiss="modal">Close</button>
+          <button class="btn btn-outline-primary" type="button" name="button" data-dismiss="modal">Submit</button>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script src="js/main.js" charset="utf-8"></script>
-  </body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="js/main.js" charset="utf-8"></script>
+</body>
+
 </html>
