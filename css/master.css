@@ -59,10 +59,12 @@ h3{
   font-size: 1.2rem;
 }
 #btnReport{
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 5s;
-  -vendor-animation-iteration-count: infinite;
-
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 3s;
+}
+#btnCommend{
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 7s;
 }
 .modal {
   font-family: 'Raleway', sans-serif;
