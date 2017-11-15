@@ -35,13 +35,36 @@
               <a href="Sign Up.html" class="nav-link">Sign Up</a>
             </li>
             <li class="nav-item">
-              <a href="Login.html" class="nav-link">Login</a>
+              <a href="Login.html" data-toggle="modal" data-target="#LogIn" data-whatever="@mdo" class="nav-link">Login</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </section>
+  <!--login-->
+  <div class="modal fade" id="LogIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Username</label>
+              <input type="text" class="form-control" id="userName" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Password</label>
+              <input type="password" class="form-control" id="passWord" placeholder="Password">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Log out</button>
+          <button type="button" class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!--Report Section-->
   <section class="main">
     <div class="container">

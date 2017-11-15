@@ -7,6 +7,12 @@
 }
 .navbar{
   padding: 50px;
+  border width: :10px;
+  opacity: 0.9;
+  border-color:#80cc33;
+}
+.navbar-brand{
+  font-size: 30px;
 }
 /*Main*/
 .main{
@@ -32,27 +38,32 @@ h3{
   font-style: italic;
 }
 
-@media (max-width: 600px) {
-  .main p{
-    display: none;
-  }
-}
 /*Report Button*/
 .btn-danger {
   font-family: 'Questrial', sans-serif;
   padding: 40px;
   font-size: 3rem;
   width: 100%;
+  border-width: 5px;
+  border-color: #fff;
+  border-radius: 20px;
+  box-shadow: -2px 2px 7px 5px rgba(0, 0, 0, 0.3);
 }
 .btn-danger p{
   font-family: 'Questrial', sans-serif;
   font-size: 1.2rem;
 }
 .btn-success {
+  display: block;
+  text-align: center;
   font-family: 'Questrial', sans-serif;
   padding: 40px;
   font-size: 3rem;
   width: 100%;
+  border-width: 5px;
+  border-color: #fff;
+  border-radius: 20px;
+  box-shadow: -2px 2px 7px 5px rgba(0, 0, 0, 0.3);
 }
 .btn-success p{
   font-family: 'Questrial', sans-serif;
@@ -69,4 +80,15 @@ h3{
 .modal {
   font-family: 'Raleway', sans-serif;
 }
-/*how*/
+
+/*Sign-Up*/
+.card-form{
+  margin-top: 200px;
+}
+.card{
+  padding: 50px;
+  border-width: 5px;
+  border-color: #fff;
+  border-radius: 20px;
+  box-shadow: -10px 10px 25px 15px rgba(0, 0, 0, 0.3);
+}
