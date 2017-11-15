@@ -8,6 +8,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
@@ -25,20 +27,14 @@
          <div class="collapse navbar-collapse" id="navbarCollapse">
            <!--the ml(margin-left) auto  is going to move the ul to the right -->
            <ul class="navbar-nav ml-auto">
+             <li class="nav-item">
+               <a href="#about-section" class="nav-link">About</a>
+             </li>
             <li class="nav-item">
-              <a href="#home" class="nav-link">Home</a>
+              <a href="#about-section" class="nav-link">Sign Up</a>
             </li>
             <li class="nav-item">
-              <a href="#how-it-works-section" class="nav-link">How it works</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about-section" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#community-section" class="nav-link">Community</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
+              <a href="#contact" class="nav-link">Login</a>
             </li>
            </ul>
          </div>
@@ -49,22 +45,28 @@
     <section class="main">
       <div class="container">
         <h1>Welcome to Mzalendo</h1>
+        <h3><strong>Brother's Keeper</strong></h3>
         <p>A community of people who want to actively participate in the safety and well-being of you and those close to you. Report incidents of crime or corruption.
           Recommend individuals who provide excellent services and model intergity in their field of expertise.
         </p>
-        <div class="row">
-          <div class="col-md-4">
-            <button class="btn btn-outline-danger" data-toggle="modal" data-target="#report" data-whatever="@mzalendo_Corrupt" role="button" aria-pressed = "true" >Corruption</button>
-          </div>
-          <div class="col-md-4">
-            <button class="btn btn-outline-dark" data-toggle="modal" data-target="#report" data-whatever="@mzalendo_Crime" role="button" aria-pressed = "true">Crime</button>
-          </div>
-          <div class="col-md-4">
-            <button class="btn btn-outline-success" data-toggle="modal" data-target="#report" data-whatever="@mzalendo_Commend" role="button" aria-pressed = "true">Commend</button>
-          </div>
-        </div>
       </div>
     </section>
+    <div class="container d-flex justify-content-center">
+      <div class="row">
+        <div class=" col-md-6">
+           <button  id="btnReport" class="btn btn-danger animated shake" data-toggle="modal" data-target="#report" data-whatever="@mzalendo_crimeReport" role="button" aria-pressed = "true">
+            <h1>Report Crime</h1>
+            <p><em>Your identification status is anonymous</em></p>
+           </button>
+         </div>
+         <div class="col-md-6">
+            <button id="btnCommend" class="btn btn-success animated pulse" data-toggle="modal" data-target="#report" data-whatever="@mzalendo_commendReport" role="button" aria-pressed = "true">
+             <h1>Commend</h1>
+             <p><em>Your identification status is anonymous</em></p>
+            </button>
+          </div>
+      </div>
+    </div>
     <!--Main Modal-->
     <div class="modal fade" id="report" tabindex="-1" role="dialog" aria-labelledby="reportLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -82,6 +84,14 @@
                 <input type="text" class="form-control" id="recipient-name">
               </div>
               <div class="form-group">
+                <label for="message-text" class="col-form-label">Time:</label>
+                <textarea class="form-control" id="time-text"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Location:</label>
+                <textarea class="form-control" id="location-text"></textarea>
+              </div>
+              <div class="form-group">
                 <label for="message-text" class="col-form-label">Message:</label>
                 <textarea class="form-control" id="message-text"></textarea>
               </div>
@@ -94,22 +104,7 @@
         </div>
       </div>
     </div>
-  <!--How it works-->
-    <section class="how">
-      <div class="container">
-        <div class="row">
-          <div class="col-4">
 
-          </div>
-          <div class="col-4">
-
-          </div>
-          <div class="col-4">
-
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
