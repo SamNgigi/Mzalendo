@@ -43,6 +43,7 @@
     </nav>
   </section>
   <!--login-->
+    <!-- TODO remember to remove the media icons -->
   <div class="modal fade" id="LogIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -60,7 +61,8 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Log out</button>
-          <button type="button" class="btn btn-primary">Login</button>
+          <!-- TODO remember to remove the data dismiss  -->
+          <button class="btn btn-outline-primary" type="button" name="button"><a href="comm-dash/community.html"  class="nav-link">Login</a></button>
         </div>
       </div>
     </div>
@@ -112,7 +114,11 @@
               <textarea class="form-control" id="time-text"></textarea>
             </div>
             <div class="form-group">
-              <label for="message-text" class="col-form-label">Location of incident:</label>
+              <label for="message-text" class="col-form-label">Name of Institution</label>
+              <textarea class="form-control" id="location-text"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Service provided</label>
               <textarea class="form-control" id="location-text"></textarea>
             </div>
             <div class="form-group">
@@ -128,6 +134,14 @@
       </div>
     </div>
   </div>
+
+  <footer class="footer">
+    <div class="footer__block block no-margin-bottom">
+      <div class="container-fluid text-center">
+        <p class="no-margin-bottom">2017 &copy; Mzalendo</p>
+      </div>
+    </div>
+  </footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
