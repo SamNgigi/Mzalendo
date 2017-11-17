@@ -36,6 +36,26 @@ Click [here](https://samngigi.github.io/Mzalendo/) to see the site.
 
 #### Credits
 Kambo Martha Marina
+
+Caleb Nasio
+
+Msangi Innocent
+
+Shem Tuti
+
+Mary Monari
+
+Jeff Miriti
+
+Wycliffe juma 
+
+Sam Ngigi
+
+Cecilia Nzilani Muthio
+
+Rachel Wanjiru Kimemia
+
+Job Mwangi
 ------------
 
 License
