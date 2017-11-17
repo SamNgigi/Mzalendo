@@ -22,7 +22,7 @@ $(document).ready(function() {
     var live = getRandomInt(10, 30);
     $(".dashtext-1").text(live);
     // console.log(live)
-  },2000);
+  },550);
 //monthly
   setInterval(function(){
     var live = getRandomInt(100, 600);
