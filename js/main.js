@@ -11,12 +11,34 @@ $('#report').on('show.bs.modal', function (event) {
 //Live Analytics
 $(document).ready(function() {
    // Stuff to do as soon as the DOM is ready
-   var messageReport = document.getElementById('message-report');
-   var reportSubmit = document.getElementById('reportSubmit');
 
-   function submitClick() {
-     alert("Submit is Working");
-   }
-   $(".dashtext-1").text("12");
+   function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+  //var live; live
+  setInterval(function(){
+    var live = getRandomInt(10, 30);
+    $(".dashtext-1").text(live);
+    // console.log(live)
+  },2000);
+//monthly
+  setInterval(function(){
+    var live = getRandomInt(100, 600);
+    $(".dashtext-2").text(live);
+    // console.log(live)
+  },9000);
+// weekly
+  setInterval(function(){
+    var live = getRandomInt(600, 800);
+    $(".dashtext-3").text(live);
+    // console.log(live)
+  },5000);
+//daily
+  setInterval(function(){
+    var live = getRandomInt(20, 50);
+    $(".dashtext-4").text(live);
+    // console.log(live)
+  },3000);
 
 });
