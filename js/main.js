@@ -1,3 +1,5 @@
+alert("This is a mock-up of how Mzalendo would work!");
+alert("Coming Soon though Fam! :)");
 //Modal
 $('#report').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
