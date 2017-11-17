@@ -2,6 +2,8 @@ alert("This is a mock-up of how Mzalendo would work!");
 alert("Coming Soon though Fam! :)");
 
 // TODO it would be cool if we could be able to flag certain phrases in reports that would be divisive.
+// TODO: Add cctv functionality
+// TODO include response notification
 //Modal
 $('#report').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
