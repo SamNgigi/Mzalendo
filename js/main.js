@@ -16,6 +16,7 @@ $(document).ready(function() {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+
   //var live; live
   setInterval(function(){
     var live = getRandomInt(10, 30);
@@ -40,5 +41,23 @@ $(document).ready(function() {
     $(".dashtext-4").text(live);
     // console.log(live)
   },3000);
+// TODO: loop for report
+  setInterval(function(){
+    var live = getRandomInt(800, 100500);
+    $(".d-report").text(live);
+    // console.log(live)
+  },500);
+
+  setInterval(function(){
+    var live = getRandomInt(100, 1000);
+    $(".one").text(live);
+    // console.log(live)
+  },3000);
+
+  setInterval(function(){
+    var live = getRandomInt(1000, 20000);
+    $(".two").text(live);
+    // console.log(live)
+  },7000);
 
 });
